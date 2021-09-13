@@ -1,0 +1,310 @@
+html,body{
+    background-color: #1E1E1E;
+    margin: 0;
+    padding:0;
+    user-select:none;
+}
+@font-face {
+    font-family: kenyanCoffee;
+    src: url(../fonts/kenyanCoffee.ttf);
+}
+@font-face{
+    font-family: kenyanCoffeeBld;
+    src: url(../fonts/kenyan\ coffee\ bd.ttf)
+}
+
+/* page one: introduction page */
+.home-container{
+    border: 2px solid #fcffd1;
+    width: 90vw;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+    z-index: 0;
+}
+.home-container .top{
+    border-bottom: 2px solid #fcffd1;
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+.three-dots{
+    
+    display: flex;
+    width: 5vw;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.three-dots div{
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+   
+}
+.home-container .top .three-dots div{
+    background-color: #fcffd1;
+}
+.time-top{
+    line-height:30px;
+}
+.time-top span{
+  
+    font-family: kenyanCoffee;
+    color: #fcffd1;
+    font-size: 1.5vw;
+}
+.home-container .center-arrow{
+    width: 100%;
+    text-align: center;
+    height: 10px;
+}
+.home-container .center-arrow svg{
+    fill: #fcffd1;
+    height: 20px;
+ 
+    width: auto;
+    animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	-moz-animation: bounce 2s infinite;
+	-o-animation: bounce 2s infinite;
+}
+.home-container .center-arrow svg:hover{
+    cursor: pointer;
+    height: 25px;
+    fill: #bdff91;
+}
+.home-container .center{
+    height: 40vh;
+    /* width: ; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.home-container .center .center-bar{
+    height: 6vh;
+    width: 20vw;
+    background-color: #fcffd1;
+    /* transform: translateY(-3vh); */
+    margin-top: 17vh;
+}
+.home-container .center h1{
+    font-family: kenyanCoffeeBld;
+    font-size: 9vw;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 40vh;
+    color: #bdff91;
+}
+.home-container .center-code{
+    width:100%;
+    text-align:center;
+}
+.home-container .center-code span{
+    font-size: 2vw;
+    text-align:center;
+    color:#bdff91;
+    font-family: kenyanCoffee;
+}
+.home-container .bottom{
+    height: 18vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/bottom\ grid.png");
+    background-position: center;
+}
+
+/* page two: Introduction of the club */
+.empty-div{
+    height: 100vh;
+}
+.info-container{
+    border: 2px solid #fcffd1;
+    background-color: #1e1e1ef5;
+    width: 90vw;
+    height: auto;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.info-container .top{
+    border-bottom: 2px solid #fcffd1;
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #fcffd1;
+}
+.info-container .top .three-dots div{
+    background-color: #1E1E1E;
+}
+.info-container .title{
+    font-family: kenyanCoffeeBld;
+    font-size: 7vw;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 20vh;
+    border-bottom: 2px solid #fcffd1;
+    color: #fcffd1;
+}
+.info-container p{
+    font-size: 1.5vw;
+    font-family: kenyanCoffee;
+    color: #fcffd1;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.info-container .center-aligned{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+.info-container .center-aligned div{
+     margin-left: 50%;
+    transform: translateX(-25%);
+    width: auto;
+}
+.info-container .center-aligned div p{
+    text-align: left;
+    font-size: 1.5vw;
+}
+.info-container p strong{
+    background-color: #bdff91;
+    color: #1E1E1E;
+    font-weight: normal;
+}
+.info-container p strong a{
+    text-decoration: none;
+}
+.info-container p img{
+    margin-top: 2vh;
+    height: 10vw;
+    width: auto;
+    text-align: center;
+}
+.info-container p .code{
+    background-color: unset;
+}
+.code a{
+    margin-top: 1vh;
+    margin-bottom:1vh;
+    text-decoration: none;
+    font-family: kenyanCoffee;
+    color: #bdff91;
+    font-size: 2vw;
+  
+}
+.footer{
+    border: 2px solid #fcffd1;
+    width:80vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-color: #fcffd1;
+}
+.footer span{
+    font-size: 2.5vh;
+    text-align:center;
+    color:#1E1E1E;
+    font-family: kenyanCoffee;
+}
+
+/* scroll icons */
+::-webkit-scrollbar {
+    width: 1vw;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1E1E1E;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #fcffd1;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #bdff91;
+  }
+
+  /* responsiveness */
+  @media only screen and (max-width: 700px)  {
+    .info-container p strong a {
+        text-decoration: none;
+        font-size: 4vw;
+    }
+    .info-container p{
+        font-size: 2.8vw;
+    }
+    .info-container .center-aligned div p {
+        text-align: left;
+        font-size: 2.8vw;
+    }
+    .info-container .center-aligned div {
+        margin-left: 0;
+        transform: translateX(5%);
+        width: auto;
+    }
+    .home-container .center-code span {
+        font-size: 4vw;
+        
+    }
+    .home-container .center .center-bar {
+        height: 4vh;
+        width: 11vw;
+        background-color: #fcffd1;
+        /* transform: translateY(-3vh); */
+        margin-top: 18vh;
+    }
+    .home-container .center h1 {
+        font-size: 11vw;
+       
+    }
+    .time-top span{
+        font-size: 3vw;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .time-top {
+        line-height: 4.4vw;
+    }
+    .three-dots div {
+        height: 2vw;
+        width: 2vw;
+        border-radius: 50%;
+    }
+    .three-dots {
+        display: flex;
+        width: 11vw;
+        justify-content: space-between;
+        padding-top: 1.2vw;
+        padding-bottom: 1.2vw;
+    }
+    .info-container p img {
+       
+        height: 25vw;
+        
+    }
+  }
