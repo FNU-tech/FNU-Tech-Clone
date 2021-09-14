@@ -7,7 +7,7 @@ function getTime(){
     
     var today = new Date();
     
-    var hrs  = today.getHours()-4;
+    var hrs  = today.getHours();
 var time = hrs.toString() + today.getMinutes().toString() + " HRS";
 var timeElement = document.getElementById("time");
 timeElement.innerHTML = time;
