@@ -13,9 +13,16 @@
           <!-- link files -->
           <link rel="stylesheet" href="/src/styles.css">
           <script src="/src/main.js"></script>
+        
 
     </head>
-    <body onload="getTime();">
+    <body onload="start();">
+        <div class="load-content" id="load" >
+            <div  class="loader-container">
+<div class="loader"></div>
+            </div>
+                
+        </div>
         <div class="home-container">
             <div class="top">
                 <div class="three-dots">
@@ -55,7 +62,9 @@
                 top: window.innerHeight,
                 left: 100,
                 behavior: 'smooth'
-              });">
+              });
+             
+              ">
                 <?xml version="1.0" encoding="iso-8859-1"?>
                 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -187,7 +196,11 @@
                 <br>
                 Scan the following QR code.
                 <br>
-                <img src="/images/discordQR.png">
+                <img src="/images/discord.png">
+                <br>
+                or<br>
+                click below to send an email<br><br>
+                <strong class="code"> <a href="mailto:leonkipkoeh00@gmail.com?subject=Interest in FNU tech CLub">sendEmail();<a></strong>
             </p>
         </div>
         <div class="info-container">
@@ -205,7 +218,11 @@
                 This website was created by the current club president as the first open source project for the club. <br>
                 If you would be interested in taking the initiative to contribute to this open source project (like they do in large companies), 
                 feel free to go through the source code by clicking the weird code look alike snippet below.<br><br>
-                <strong class="code"> <a href="https://discord.gg/fQMnWYXTsm">showMeCode();<a></strong>
+                <strong class="code"> <a href="https://github.com/leonkoech/FNU-tech-club-website">showMeCode();<a></strong>
+                <br>
+                The qr code generator source code used here is also open source and written in python. You can find it by clicking below.
+                <br><br>
+                <strong class="code"> <a href="https://github.com/leonkoech/QR-code-generator">qrGenerator();<a></strong>
             </p>
         </div>
         <div class="footer">
